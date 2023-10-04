@@ -2357,13 +2357,6 @@
 
             return Dropdown;
         })();
-
-    function getURL() {
-        window.location.href;
-    }
-
-
-
     /**
      * ------------------------------------------------------------------------
      * Data Api implementation
