@@ -17,11 +17,8 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 // 시큐리티 설정
 @Configuration
 @EnableWebSecurity
-@RequiredArgsConstructor
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
-    private final UserSecurityService userSecurityService;
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
